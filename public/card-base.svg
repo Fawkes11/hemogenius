@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300.5">
+  <g>
+    <rect x=".5" y="11" width="439" height="289" rx="9.5" ry="9.5" fill="#f6f3f6"/>
+    <path d="M430,11.5c4.96,0,9,4.04,9,9v270c0,4.96-4.04,9-9,9H10c-4.96,0-9-4.04-9-9V20.5c0-4.96,4.04-9,9-9h420M430,10.5H10C4.48,10.5,0,14.98,0,20.5v270c0,5.52,4.48,10,10,10h420c5.52,0,10-4.48,10-10V20.5c0-5.52-4.48-10-10-10h0Z" fill="#daced9"/>
+  </g>
+  <path d="M424,300v-120c0-8.28-6.72-15-15-15H31.18c-8.38,0-15.18,6.8-15.18,15.18v119.82" fill="#f6f3f6" stroke="#f60" strokeMiterlimit="10"/>
+  <g>
+    <g>
+      <path d="M25,9.11v-3.2c0-.78.84-1.4,1.87-1.4l46.27.14c1.03,0,1.86.63,1.86,1.4v3.06c0,.77-.84,1.4-1.87,1.4H26.87c-1.03,0-1.87-.63-1.87-1.4Z" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <rect x="27" y=".51" width="46" height="4" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polyline points="26.87 10.51 27.13 45.46 32.93 63.01 32.93 137.44 41.97 149.49 57.97 149.49 66.93 137.44 66.93 63.01 72.87 45.46 73.13 10.51" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polygon points="66.93 74.49 32.93 74.49 32.93 137.44 41.97 149.49 57.97 149.49 66.93 137.44 66.93 74.49" fill="#fff" stroke="#daced9" strokeMiterlimit="10"/>
+      <polyline points="16 202.8 356 202.8 424 202.8" fill="#fff" stroke="#f60" strokeMiterlimit="10"/>
+      <line x1="356" y1="165" x2="356" y2="202.8" fill="#fff" stroke="#f60" strokeMiterlimit="10"/>
+      <line x1="288" y1="202.8" x2="288" y2="165" fill="#fff" stroke="#f60" strokeMiterlimit="10"/>
+      <line x1="220" y1="202.8" x2="220" y2="165" fill="#fff" stroke="#f60" strokeMiterlimit="10"/>
+      <line x1="152" y1="202.8" x2="152" y2="165" fill="#fff" stroke="#f60" strokeMiterlimit="10"/>
+      <line x1="84" y1="202.8" x2="84" y2="165" fill="#fff" stroke="#f60" strokeMiterlimit="10"/>
+    </g>
+    <g>
+      <path d="M93,9.1v-3.2c0-.78.84-1.4,1.87-1.4l46.27.14c1.03,0,1.86.63,1.86,1.4v3.06c0,.77-.84,1.4-1.87,1.4h-46.27c-1.03,0-1.87-.63-1.87-1.4Z" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <rect x="95" y=".5" width="46" height="4" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polyline points="94.87 10.5 95.13 45.46 100.93 63.01 100.93 137.45 109.97 149.5 125.97 149.5 134.93 137.45 134.93 63.01 140.87 45.46 141.13 10.5" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polygon points="134.93 74.49 100.93 74.49 100.93 137.45 109.97 149.5 125.97 149.5 134.93 137.45 134.93 74.49" fill="#fff" stroke="#daced9" strokeMiterlimit="10"/>
+    </g>
+    <g>
+      <path d="M161,9.1v-3.2c0-.78.84-1.4,1.87-1.4l46.27.14c1.03,0,1.86.63,1.86,1.4v3.06c0,.77-.84,1.4-1.87,1.4h-46.27c-1.03,0-1.87-.63-1.87-1.4Z" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <rect x="163" y=".5" width="46" height="4" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polyline points="162.87 10.5 163.13 45.46 168.93 63.01 168.93 137.45 177.97 149.5 193.97 149.5 202.93 137.45 202.93 63.01 208.87 45.46 209.13 10.5" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polygon points="202.93 74.49 168.93 74.49 168.93 137.45 177.97 149.5 193.97 149.5 202.93 137.45 202.93 74.49" fill="#fff" stroke="#daced9" strokeMiterlimit="10"/>
+    </g>
+    <g>
+      <path d="M229,9.1v-3.2c0-.78.84-1.4,1.87-1.4l46.27.14c1.03,0,1.86.63,1.86,1.4v3.06c0,.77-.84,1.4-1.87,1.4h-46.27c-1.03,0-1.87-.63-1.87-1.4Z" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <rect x="231" y=".5" width="46" height="4" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polyline points="230.87 10.5 231.13 45.46 236.93 63.01 236.93 137.45 245.97 149.5 261.97 149.5 270.93 137.45 270.93 63.01 276.87 45.46 277.13 10.5" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polygon points="270.93 74.49 236.93 74.49 236.93 137.45 245.97 149.5 261.97 149.5 270.93 137.45 270.93 74.49" fill="#fff" stroke="#daced9" strokeMiterlimit="10"/>
+    </g>
+    <g>
+      <path d="M297,9.1v-3.2c0-.78.84-1.4,1.87-1.4l46.27.14c1.03,0,1.86.63,1.86,1.4v3.06c0,.77-.84,1.4-1.87,1.4h-46.27c-1.03,0-1.87-.63-1.87-1.4Z" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <rect x="299" y=".5" width="46" height="4" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polyline points="298.87 10.5 299.13 45.46 304.93 63.01 304.93 137.45 313.97 149.5 329.97 149.5 338.93 137.45 338.93 63.01 344.87 45.46 345.13 10.5" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polygon points="338.93 74.49 304.93 74.49 304.93 137.45 313.97 149.5 329.97 149.5 338.93 137.45 338.93 74.49" fill="#fff" stroke="#daced9" strokeMiterlimit="10"/>
+    </g>
+    <g>
+      <path d="M365,9.1v-3.2c0-.78.84-1.4,1.87-1.4l46.27.14c1.03,0,1.86.63,1.86,1.4v3.06c0,.77-.84,1.4-1.87,1.4h-46.27c-1.03,0-1.87-.63-1.87-1.4Z" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <rect x="367" y=".5" width="46" height="4" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polyline points="366.87 10.5 367.13 45.46 372.93 63.01 372.93 137.45 381.97 149.5 397.97 149.5 406.93 137.45 406.93 63.01 412.87 45.46 413.13 10.5" fill="#f6f3f6" stroke="#daced9" strokeMiterlimit="10"/>
+      <polygon points="406.93 74.49 372.93 74.49 372.93 137.45 381.97 149.5 397.97 149.5 406.93 137.45 406.93 74.49" fill="#fff" stroke="#daced9" strokeMiterlimit="10"/>
+    </g>
+  </g>
+  <line x1="16" y1="268.3" x2="424" y2="268.3" fill="#f6f3f6" stroke="#f60" strokeMiterlimit="10"/>
+  <line x1="84" y1="268.3" x2="84" y2="300.5" fill="#f6f3f6" stroke="#f60" strokeMiterlimit="10"/>
+  <line x1="152" y1="267.82" x2="152" y2="300.03" fill="#f6f3f6" stroke="#f60" strokeMiterlimit="10"/>
+  <line x1="220" y1="267.82" x2="220" y2="300.03" fill="#f6f3f6" stroke="#f60" strokeMiterlimit="10"/>
+  <line x1="288" y1="267.82" x2="288" y2="300.03" fill="#f6f3f6" stroke="#f60" strokeMiterlimit="10"/>
+  <line x1="356" y1="267.82" x2="356" y2="300.03" fill="#f6f3f6" stroke="#f60" strokeMiterlimit="10"/>
+  <path d="M36.19,76.25h27.63c1.21,0,2.19.67,2.19,1.5h0c0,.83-.98,1.5-2.19,1.5h-27.63c-1.21,0-2.19-.67-2.19-1.5h0c0-.83.98-1.5,2.19-1.5Z" fill="#9c0001" stroke="#9c0001" strokeMiterlimit="10"/>
+  <path d="M104.19,76.25h27.63c1.21,0,2.19.67,2.19,1.5h0c0,.83-.98,1.5-2.19,1.5h-27.63c-1.21,0-2.19-.67-2.19-1.5h0c0-.83.98-1.5,2.19-1.5Z" fill="#9c0001" stroke="#9c0001" strokeMiterlimit="10"/>
+  <path d="M172.19,76.25h27.63c1.21,0,2.19.67,2.19,1.5h0c0,.83-.98,1.5-2.19,1.5h-27.63c-1.21,0-2.19-.67-2.19-1.5h0c0-.83.98-1.5,2.19-1.5Z" fill="#9c0001" stroke="#9c0001" strokeMiterlimit="10"/>
+  <path d="M376.19,76.25h27.63c1.21,0,2.19.67,2.19,1.5h0c0,.83-.98,1.5-2.19,1.5h-27.63c-1.21,0-2.19-.67-2.19-1.5h0c0-.83.98-1.5,2.19-1.5Z" fill="#9c0001" stroke="#9c0001" strokeMiterlimit="10"/>
+  <path d="M240.19,76.25h27.63c1.21,0,2.19.67,2.19,1.5h0c0,.83-.98,1.5-2.19,1.5h-27.63c-1.21,0-2.19-.67-2.19-1.5h0c0-.83.98-1.5,2.19-1.5Z" fill="#9c0001" stroke="#9c0001" strokeMiterlimit="10"/>
+  <path d="M306.06,136.99l8.34,11.76s.06.05.1.05h14.94s.08-.02.1-.05l8.27-11.76c.06-.08,0-.19-.1-.19h-31.56c-.1,0-.16.11-.1.19Z" fill="#9c0001" stroke="#9c0001" strokeMiterlimit="10"/>
+  <text transform="translate(37.66 188.82)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">A1</tspan></text>
+  <text transform="translate(108.37 189.31)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">B</tspan></text>
+  <text transform="translate(174.56 189.04)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">A1</tspan></text>
+  <text transform="translate(246.46 189.38)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">B</tspan></text>
+  <text transform="translate(312.29 188.99)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">A1</tspan></text>
+  <text transform="translate(382.85 189.21)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">B</tspan></text>
+  <text transform="translate(41.53 290.16)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">4</tspan></text>
+  <text transform="translate(107.86 290.14)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">4</tspan></text>
+  <text transform="translate(174.86 290.14)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">4</tspan></text>
+  <text transform="translate(245.86 291.14)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">4</tspan></text>
+  <text transform="translate(381.86 291.14)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">4</tspan></text>
+  <text transform="translate(314.86 290.14)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="21"><tspan x="0" y="0">0</tspan></text>
+  <text transform="translate(29.39 243.03)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="17"><tspan x="0" y="0">Maria Juana 1</tspan></text>
+  <text transform="translate(165.69 243.25)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="17"><tspan x="0" y="0">Maria Juana 2</tspan></text>
+  <text transform="translate(296.69 228.25)" fontFamily="InkFree, &apos;Ink Free&apos;" fontSize="17"><tspan x="0" y="0">Maria Juana </tspan><tspan x="0" y="20.4">TTO enzimático</tspan></text>
+</svg>
