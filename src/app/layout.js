@@ -6,7 +6,7 @@ import { NextUIProvider } from "@nextui-org/react";
 
 const lato = Lato({
   subsets: ['latin'],
-  style: 'italic',
+  style: ['normal', 'italic'],
   weight: '400'
 })
 
