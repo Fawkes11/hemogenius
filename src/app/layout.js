@@ -1,13 +1,15 @@
-import { Patrick_Hand } from 'next/font/google'
+import {  Lato } from 'next/font/google'
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 
 
-const patrickHand = Patrick_Hand({
+
+const lato = Lato({
   subsets: ['latin'],
-  weight: '400',
-  variable: "--PatrickHandSC-Regular",
+  style: 'italic',
+  weight: '400'
 })
+
 
 
 export const metadata = {
@@ -19,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${patrickHand.className} antialiased`}
+        className={`${lato.className} antialiased`}
       ><NextUIProvider>
           {children}
         </NextUIProvider>
