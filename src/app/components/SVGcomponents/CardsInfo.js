@@ -7,6 +7,7 @@ const patrickHand = Patrick_Hand({
 })
 
 
+
 const CardsInfo = ({ cardInfo }) => {
 
     return (
@@ -16,12 +17,12 @@ const CardsInfo = ({ cardInfo }) => {
                 getCardInfoComponent(cardInfo)
             }
 
-            {/* <text
-                transform='translate(382 306)'
+            <text
+                transform='translate(435.35 265) rotate(-90)'
                 className={patrickHand.className}
                 fontFamily="Patrick Hand"
-                fontSize="6"
-            ><tspan>© Sofia Castillo</tspan></text> */}
+                fontSize="11"
+            ><tspan>© Sofia Castillo</tspan></text>
         </>
     )
 }
