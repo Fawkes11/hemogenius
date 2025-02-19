@@ -1,6 +1,6 @@
 import {  Lato } from 'next/font/google'
 import "./globals.css";
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 
 
 
@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${lato.className} antialiased`}
-      ><NextUIProvider>
+      ><HeroUIProvider>
           {children}
-        </NextUIProvider>
+        </HeroUIProvider>
       </body>
     </html>
   );

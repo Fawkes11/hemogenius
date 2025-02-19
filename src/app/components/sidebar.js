@@ -15,7 +15,7 @@ import {
     Tab,
     Card,
     CardBody
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 import { useCardStore } from "../store/cardStore";
 

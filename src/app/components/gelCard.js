@@ -8,7 +8,7 @@ import { useCardStore } from "../store/cardStore";
 import getSVGString from "../utilities/ToString";
 import CanvasSVG from "./CanvasSVG";
 import { patrickHandBase64 } from "../fonts/patrickHandBase64";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 
 const GelCard = () => {
     const { rows, rows2, frameColors, cardInfo } = useCardStore();
@@ -112,10 +112,10 @@ const GelCard = () => {
             </div>
 
             <Button
-                onClick={handleExport}
+                onPress={handleExport}
                 className="mt-8 px-4 py-2 relative z-10 bg-caribbean-600 text-white  rounded"
                 variant="shadow"
-                >
+            >
                 Export as image
             </Button>
 
