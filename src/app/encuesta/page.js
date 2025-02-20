@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { SimpleField } from "../components/surveyComponents/formFields"
 import { SvgCheck } from "../components/surveyComponents/SvgCheck";
 
