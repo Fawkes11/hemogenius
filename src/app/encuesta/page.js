@@ -363,6 +363,14 @@ export default Encuesta
 
 const SingleBox = ({ number = '', label, typeInput = 'checkbox', borderDefault = true }) => {
 
+    const [isChecked, setIsChecked] = useState();
+
+
+    const handleChecked = (option) => {
+        console.log("hola")
+        setIsChecked(option)
+    }
+
     return (
         <div className={`w-full flex min-h-5 items-center pl-2 ${borderDefault ? 'border-b-1.5' : ''}  border-neutral-600`}>
             <p className="text-neutral-800  text-xs">
@@ -379,14 +387,31 @@ const SingleBox = ({ number = '', label, typeInput = 'checkbox', borderDefault =
                     </div>
                     :
                     <div className="w-12 flex  ml-auto mt-auto">
-                        <label className="flex w-6 h-5 items-center justify-center text-neutral-800 font-bold text-xs cursor-pointer border-1   border-neutral-700">
-                            SI
-                            <input type="checkbox" className="appearance-none" />
-                        </label>
-                        <label className="flex w-6 h-5 items-center justify-center text-neutral-800 font-bold text-xs cursor-pointer border-1   border-neutral-700">
-                            NO
-                            <input type="checkbox" className="appearance-none" />
-                        </label>
+                        <div className=" w-6 h-5 relative">
+                            <label className="flex w-6 h-5 items-center justify-center text-neutral-800 font-bold text-xs cursor-pointer border-1   border-neutral-700">
+                                SI
+                                <input type="checkbox" className="appearance-none" onChange={() => handleChecked('si')} />
+                            </label>
+                            {
+                                isChecked === 'si' &&
+                                <div className="absolute left-1/2 -translate-x-1/2 top-0 w-6 h-5 bg-slate-500/80">
+                                    <SvgCheck />
+                                </div>
+                            }
+                        </div>
+
+                        <div className=" w-6 h-5 relative">
+                            <label className="flex w-6 h-5 items-center justify-center text-neutral-800 font-bold text-xs cursor-pointer border-1   border-neutral-700">
+                                NO
+                                <input type="checkbox" className="appearance-none" onChange={() => handleChecked('no')} />
+                            </label>
+                            {
+                                isChecked === 'no' &&
+                                <div className="absolute left-1/2 -translate-x-1/2 top-0 w-6 h-5 bg-slate-500/80">
+                                    <SvgCheck />
+                                </div>
+                            }
+                        </div>
                     </div>
             }
 
