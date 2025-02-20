@@ -36,11 +36,43 @@ const Encuesta = () => {
                     <h1 className="font-bold text-sm">FECHA DEL DILIGENCIAMIENTO DE LA ENCUESTA (DIA/MES/AÑO)</h1>
                 </div>
                 <div className="flex px-3 py-1 mt-2">
-                    <span className="font-bold text-sm">SI</span> _______ <span className="font-semibold text-sm">Por favor continúe con la encuesta</span>
+                    <span className="font-bold text-sm">SI</span>
+                    <div className="w-8 h-6 mx-1 relative">
+
+                        <input
+                            type="checkbox"
+                            //checked={selected === gender}
+                            onChange={() => handleSurveyUnderstanding('si')}
+                            className="appearance-none cursor-pointer w-8 h-6 bg-transparent border-b hover:border border-neutral-800 focus:outline-none" />
+                        {
+                            surveyUnderstanding === 'si' &&
+                            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-5 h-5">
+                                <SvgCheck />
+                            </div>
+                        }
+
+                    </div>
+                    <span className="font-semibold text-sm">Por favor continúe con la encuesta</span>
                 </div>
 
                 <div className="flex px-3 py-1">
-                    <span className="font-bold text-sm">NO</span> _______ <span className="font-semibold text-sm">Antes de continuar con el diligenciamiento de la encuesta, lea la información y pregunte cualquier inquietud al personal del banco de sangre</span>
+                    <span className="font-bold text-sm">NO</span>
+                    <div className="w-8 h-6 mx-1 relative">
+
+                        <input
+                            type="checkbox"
+                            //checked={selected === gender}
+                            onChange={() => handleSurveyUnderstanding('no')}
+                            className="appearance-none cursor-pointer w-8 h-6 bg-transparent border-b hover:border border-neutral-800 focus:outline-none" />
+                        {
+                            surveyUnderstanding === 'no' &&
+                            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-5 h-5">
+                                <SvgCheck />
+                            </div>
+                        }
+
+                    </div>
+                    <span className="font-semibold text-sm">Antes de continuar con el diligenciamiento de la encuesta, lea la información y pregunte cualquier inquietud al personal del banco de sangre</span>
                 </div>
 
             </div>
@@ -323,7 +355,7 @@ const Encuesta = () => {
 
                     </div>
                     <div className="w-full border-2 border-neutral-600 ">
-                        <div className="w-full text-xs font-semibold text-center px-2 py-1 h-20 flex items-center">
+                        <div className="w-full text-xs font-semibold text-center border-b-2 px-2 py-1 h-20 flex items-center">
                             APRECIADO DONANTE: CON LAS PREGUNTAS QUE VIENEN A CONTINUACIÓN BUSCAMOS ASEGURAR QUE LOS PACIENTES QUE VAN A RECIBIR SU SANGRE, NO VAN A CORRER RIESGO DE CONTRAER UNA ENFERMEDAD INFECCIOSA A TRAVÉS DE LA TRANSFUSIÓN
                         </div>
                         <SingleBox number={13} label={`¿Ha tenido una nueva pareja en los últimos seis (6) meses?`} />
