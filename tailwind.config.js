@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const {heroui} = require("@heroui/react");
+const { heroui } = require("@heroui/react");
 
 
 module.exports = {
@@ -25,6 +25,9 @@ module.exports = {
           800: "#084239",
           900: "#003229"
         }
+      },
+      fontSize: {
+        'xxs': '0.625rem', // 10px
       },
     },
   },
