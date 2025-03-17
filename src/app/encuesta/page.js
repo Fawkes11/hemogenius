@@ -2,15 +2,56 @@
 import { useState } from "react";
 import { SimpleField } from "../components/surveyComponents/formFields"
 import { SvgCheck } from "../components/surveyComponents/SvgCheck";
+import { Pagination, PaginationItem, PaginationCursor } from "@heroui/pagination";
+import { Textarea } from "@heroui/react";
+
+
 
 
 const Encuesta = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+
+    // Array de objetos con número de página y contenido JSX
+    const pages = [
+        { numberPage: 1, pageJSX: <PageOne /> },
+        { numberPage: 2, pageJSX: <PageTwo /> }
+    ];
+
+    const handlePagination = (newPage) => {
+        if (newPage >= 1 && newPage <= pages.length) {
+            setCurrentPage(newPage); // Solo cambia si está en el rango válido
+        }
+    };
+
+    return (
+        <div className="w-full relative bg-zinc-50 pt-4">
+            {/* Componente de paginación que puede moverse por las páginas */}
+            <div className='w-full flex justify-center items-center mb-3'>
+                <Pagination
+                    initialPage={1}
+                    color="primary"
+                    variant="bordered"
+                    total={pages.length}
+                    onChange={(newPage) => handlePagination(newPage)}
+                />
+            </div>
+
+            {/* Renderiza el contenido correspondiente a la página actual */}
+            {pages.find(page => page.numberPage === currentPage)?.pageJSX}
+        </div>
+    );
+};
+
+export default Encuesta
+
+const PageOne = () => {
 
     const [selected, setSelected] = useState(null);
     const [healthScheme, setHealthScheme] = useState(null);
     const [maritalStatus, setMaritalStatus] = useState(null);
     const [educationalLevel, setEducationalLevel] = useState(null);
     const [surveyUnderstanding, setSurveyUnderstanding] = useState(null);
+    const [isRelationToPregnancy, setIsRelationToPregnancy] = useState(null);
 
     const handleCheckboxChange = (value) => {
         setSelected(value); // Guarda solo el valor del checkbox seleccionado
@@ -28,11 +69,15 @@ const Encuesta = () => {
     const handleSurveyUnderstanding = (value) => {
         setSurveyUnderstanding(value); // Guarda solo el valor del checkbox seleccionado
     };
+    const handleRelationToPregnancy = (value) => {
+        setIsRelationToPregnancy(value)
+    }
 
     return (
         <>
-            <div className="max-w-5xl mx-auto bg-gray-200 border-2 border-t-0 border-neutral-600 pb-3">
-                <div className="w-full border-2 border-neutral-600 px-3 py-1">
+            {/* FECHA DEL DILIGENCIAMIENTO */}
+            <div className="max-w-5xl mx-auto bg-gray-200 border-2 my-2 border-neutral-600 pb-3">
+                <div className="w-full border-b-2 border-neutral-600 px-3 py-1">
                     <h1 className="font-bold text-sm">FECHA DEL DILIGENCIAMIENTO DE LA ENCUESTA (DIA/MES/AÑO)</h1>
                 </div>
                 <div className="flex px-3 py-1 mt-2">
@@ -76,8 +121,10 @@ const Encuesta = () => {
                 </div>
 
             </div>
-            <div className="max-w-5xl mx-auto bg-gray-200 border-2 border-neutral-600 pb-10">
-                <div className="w-full border-2 border-neutral-600">
+
+            {/* DATOS PERSONALES */}
+            <div className="max-w-5xl mx-auto bg-gray-200 border-2 my-2 border-neutral-600 pb-10">
+                <div className="w-full border-b-2 border-neutral-600">
                     <h1 className="text-center font-bold text-xl">DATOS PERSONALES</h1>
                 </div>
 
@@ -311,13 +358,15 @@ const Encuesta = () => {
                 </div>
 
             </div >
-            <div className="max-w-5xl mx-auto bg-gray-200 border-2 border-t-0 border-neutral-600 pb-10">
-                <div className="w-full border-2 border-neutral-600">
+
+            {/* ANTECEDENTES MEDICOS */}
+            <div className="max-w-5xl mx-auto bg-gray-200 border-2 mt-2 border-neutral-600">
+                <div className="w-full border-b-2 border-neutral-600">
                     <h1 className="text-center font-bold">ANTECEDENTES MEDICOS</h1>
                 </div>
                 <div className="w-full grid grid-cols-2">
 
-                    <div className="w-full border-2 border-neutral-600 ">
+                    <div className="w-full ">
 
                         <SingleBox number={1} label={` ¿Ha donado sangre o plaquetas anteriormente? `} />
                         <SingleBox label={` ¿Hace cuanto? Escriba la Fecha `} typeInput="text" />
@@ -327,7 +376,7 @@ const Encuesta = () => {
                         <SingleBox number={2} label={` ¿Ha sido declarado alguna vez no apto para donar sangre? `} />
                         <SingleBox number={3} label={` ¿Se ha sentido bien de salud en las últimas (2) dos semanas? `} />
                         <SingleBox number={4} label={` ¿En los últimos 12 meses estuvo en tratamiento médico? ¿o le han realizado alguna cirugía? `} />
-                        <SingleBox number={5} label={` ¿Alguna vez usted o su pareja han recibido transfusión, transplante de órganos o tejidos? `} />
+                        <SingleBox number={5} label={` ¿Alguna vez usted o su pareja han recibido transfusión, trasplante de órganos o tejidos? `} />
                         <SingleBox number={6} label={` ¿En los últimos 7 días le han realizado tratamientos dentales? `} />
                         <SingleBox number={7} borderDefault={false} label={` ¿Ha presentado alguno de los siguientes problemas de salud? Enfermedades de la sangre, corazón, trastornos mentales, diabetes, cáncer, enfermedades de pulmón, hipertensión o hipotensión?`} />
                         <SingleBox label={` ¿Cuál? `} typeInput="text" />
@@ -354,7 +403,7 @@ const Encuesta = () => {
 
 
                     </div>
-                    <div className="w-full border-2 border-neutral-600 ">
+                    <div className="w-full border-l-2 border-neutral-600 ">
                         <div className="w-full text-xs font-semibold text-center border-b-2 px-2 py-1 h-20 flex items-center">
                             APRECIADO DONANTE: CON LAS PREGUNTAS QUE VIENEN A CONTINUACIÓN BUSCAMOS ASEGURAR QUE LOS PACIENTES QUE VAN A RECIBIR SU SANGRE, NO VAN A CORRER RIESGO DE CONTRAER UNA ENFERMEDAD INFECCIOSA A TRAVÉS DE LA TRANSFUSIÓN
                         </div>
@@ -380,18 +429,183 @@ const Encuesta = () => {
                         <SingleBox typeInput="text" label={`¿Hace cuanto? `} />
                         <SingleBox number={28} label={`¿Leyó y comprendió el cuestionario?`} />
                         <SingleBox borderDefault={false} label={`¿Fueron contestadas sus dudas al respecto?`} />
-                        <SingleBox number={29} label={`¿Qué actividades realizará después de la donación?`} />
+                        <SingleBox typeInput="text" number={29} label={`¿Qué actividades realizará después de la donación?`} />
                     </div>
 
                 </div>
             </div>
+            {/* SI ES MUJER... */}
+            <div className="max-w-5xl mx-auto bg-gray-200 border-2 mt-2 border-neutral-600 mb-20">
+
+                <div className="w-full mb-2 border-b-2 border-neutral-600">
+                    <h1 className="text-center font-bold text-lg">SI USTED ES MUJER POR FAVOR DILIGENCIE ESTA PARTE DEL FORMATO</h1>
+                </div>
+
+                <div className="grid grid-cols-12 gap-1 px-4 mt-0.5">
+
+                    <SimpleField colSpan={6} number={30} label={'Fecha de su última menstruación (día, mes, año)'} />
+                    <div className='col-span-1'></div>
+                    <SimpleField colSpan={2} number={31} label={'¿Cuántos embarazos?'} small />
+                    <SimpleField colSpan={1} number={''} label={'Partos'} small />
+                    <SimpleField colSpan={1} number={''} label={'Cesáreas'} small />
+                    <SimpleField colSpan={1} number={''} label={'Abortos'} small />
+
+                </div>
+                <div className="grid grid-cols-12 px-4 mt-1.5">
+
+                    <div className="col-span-8 flex items-center">
+                        <p className="text-neutral-800 font-semibold text-xs whitespace-nowrap">
+                            <span className="font-bold text-xs mr-2">32.</span>
+                            ¿Está embarazada, lactando o ha tenido abortos, legrados, partos o cesárea en el último año?
+                        </p>
+                        <div className="ml-2 flex items-center">
+                            {
+                                ['SI', 'NO'].map((option, index) => (
+                                    <div key={index} className="mr-1 flex relative items-center">
+                                        <label className="text-xs mr-1 font-semibold">{option}</label>
+                                        <div className="relative">
+                                            <input
+                                                type="checkbox"
+                                                checked={isRelationToPregnancy === option}
+                                                onChange={() => handleRelationToPregnancy(option)}
+                                                className="appearance-none cursor-pointer w-8 h-6 bg-transparent border-b hover:border border-neutral-800 focus:outline-none" />
+                                            {
+                                                isRelationToPregnancy === option &&
+                                                <div className="absolute left-1/2 -translate-x-1/2 top-0 w-5 h-5">
+                                                    <SvgCheck />
+                                                </div>
+                                            }
+                                        </div>
+
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <div className='col-span-2 flex items-center'></div>
+                    <SimpleField colSpan={2} number={''} label={'¿Cuál?'} small />
+
+                </div>
+
+            </div>
         </>
 
     )
+
 }
 
-export default Encuesta
+const PageTwo = () => {
 
+    const [isSuitable, setIsSuitable] = useState(null);
+    const [recommendationsGiven, setRecommendationsGiven] = useState(null);
+
+    const options = [
+        {
+            suitable: 'SI',
+            text: 'APTO'
+        },
+        {
+            suitable: 'NO',
+            text: 'NO APTO'
+        }
+    ]
+
+    const handleSuitable = (option) => {
+        setIsSuitable(option)
+    }
+
+    const handleRecomendations = (option) => {
+        setRecommendationsGiven(option)
+    }
+    return (
+        <>
+            <div className="max-w-5xl mx-auto bg-gray-200 border-2 my-2 border-neutral-600 pb-3">
+                <div className="w-full border-b-2 border-neutral-600">
+                    <h1 className="text-center font-bold text-xl">PARA DILIGENCIAMIENTO POR PARTE DEL PERSONAL DE BANCO DE SANGRE</h1>
+                </div>
+                <div className="w-full border-b-2 border-neutral-600">
+                    <p className="text-center text-sm">Calidad y consistencia de las respuestas, aspecto general, comportamiento y actitud del donante potencial</p>
+                    <div className="ml-2 flex items-center justify-center">
+                        {
+                            options.map((option, index) => (
+                                <div key={index} className="mr-1 flex relative items-center">
+                                    <div className="relative">
+                                        <input
+                                            type="checkbox"
+                                            checked={isSuitable === option.suitable}
+                                            onChange={() => handleSuitable(option.suitable)}
+                                            className="appearance-none cursor-pointer w-8 h-6 bg-transparent border-b hover:border border-neutral-800 focus:outline-none" />
+                                        {
+                                            isSuitable === option.suitable &&
+                                            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-5 h-5">
+                                                <SvgCheck />
+                                            </div>
+                                        }
+                                    </div>
+                                    <label className="text-xs mr-1 font-semibold">{option.text}</label>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+
+
+                <div className="w-full border-b-2 border-neutral-600 pl-3">
+
+                    <div className="col-span-5 flex items-center">
+                        <p className="text-neutral-800 font-bold text-sm whitespace-nowrap">
+                            Se dan recomendaciones posdonación
+                        </p>
+                        <div className="ml-2 flex items-center">
+                            {
+                                ['SI', 'NO'].map((option, index) => (
+                                    <div key={index} className="mr-1 flex relative items-center">
+                                        <label className="text-xs mr-1 font-semibold">{option}</label>
+                                        <div className="relative">
+                                            <input
+                                                type="checkbox"
+                                                checked={recommendationsGiven === option}
+                                                onChange={() => handleRecomendations(option)}
+                                                className="appearance-none cursor-pointer w-8 h-6 bg-transparent border-b hover:border border-neutral-800 focus:outline-none" />
+                                            {
+                                                recommendationsGiven === option &&
+                                                <div className="absolute left-1/2 -translate-x-1/2 top-0 w-5 h-5">
+                                                    <SvgCheck />
+                                                </div>
+                                            }
+                                        </div>
+
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div className="w-full border-b-2 border-neutral-600 px-2 py-3">
+                    <Textarea
+                        className="max-w-2xl"
+                        label="Ingresa aquí tus observaciones"
+                        placeholder=""
+                    />
+                    <div className="w-full grid grid-cols-12 px-2">
+
+                        <div className="col-span-4 h-32 flex flex-col justify-between mt-4 border border-neutral-900 p-2">
+                            <h3 className="text-xs font-semibold text-center">VERIFICACIÓN SIHEVI Y SOFTWARE BANCO DE SANGRE</h3>
+                            <div className="w-full px-4">
+                                <p className="w-full border-t text-xs border-neutral-800 font-semibold text-center">Firma</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
 
 const SingleBox = ({ number = '', label, typeInput = 'checkbox', borderDefault = true }) => {
 
@@ -418,9 +632,9 @@ const SingleBox = ({ number = '', label, typeInput = 'checkbox', borderDefault =
 
                     </div>
                     :
-                    <div className="w-12 flex  ml-auto mt-auto">
+                    <div className="w-12 flex mr-1 ml-auto mt-auto">
                         <div className=" w-6 h-5 relative">
-                            <label className="flex w-6 h-5 items-center justify-center text-neutral-800 font-bold text-xs cursor-pointer border-1   border-neutral-700">
+                            <label className="flex w-6 h-5 items-center justify-center text-neutral-800 font-bold text-xs cursor-pointer border-collapse: collapse; border-1   border-neutral-700">
                                 SI
                                 <input type="checkbox" className="appearance-none" onChange={() => handleChecked('si')} />
                             </label>
@@ -433,7 +647,7 @@ const SingleBox = ({ number = '', label, typeInput = 'checkbox', borderDefault =
                         </div>
 
                         <div className=" w-6 h-5 relative">
-                            <label className="flex w-6 h-5 items-center justify-center text-neutral-800 font-bold text-xs cursor-pointer border-1   border-neutral-700">
+                            <label className="flex w-6 h-5 items-center justify-center text-neutral-800 font-bold text-xs cursor-pointer border-collapse: collapse; border-1   border-neutral-700">
                                 NO
                                 <input type="checkbox" className="appearance-none" onChange={() => handleChecked('no')} />
                             </label>
