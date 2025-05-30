@@ -1,6 +1,11 @@
+import { useSurveyStore } from "@/app/store/surveyStore";
 
 
-export const SimpleField = ({ colSpan, number, label, small, allBorder, borderDefault }) => {
+export const SimpleField = ({ colSpan, number, label, small, allBorder, borderDefault, id }) => {
+
+
+  const surveyData = useSurveyStore(state => state.data)
+  const setField = useSurveyStore(state => state.setField)
 
 
   const colSpanObj = {
@@ -22,7 +27,11 @@ export const SimpleField = ({ colSpan, number, label, small, allBorder, borderDe
     <div className={`${colSpanObj[colSpan]} flex items-center mr-1`}>
       <span className="font-bold text-xs mr-2">{number}{number != '' && '.'}</span>
       <label className="text-neutral-800 font-semibold text-xs mr-2 whitespace-nowrap">{label}</label>
-      <input className={`flex-grow w-6 h-4 text-xs ${small ? 'text-center' : 'pl-3'}  bg-transparent ${allBorder ? 'border' : 'border-b'} border-neutral-800 focus:outline-none`} />
+      <input
+        value={surveyData[id] || ''}
+        onChange={(e)=> setField(id, e.target.value)}
+        className={`flex-grow w-6 h-4 text-xs ${small ? 'text-center' : 'pl-3'}  bg-transparent ${allBorder ? 'border' : 'border-b'} border-neutral-800 focus:outline-none`}
+      />
     </div>
   );
 };
