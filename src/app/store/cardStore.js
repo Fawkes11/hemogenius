@@ -78,10 +78,10 @@ const cardsDictionary = {
     ],
     card_09: [ /* Profile 2 */
         { key: "1", nombre: "k", sub: "", sup:"", subtitle: "(KEL2)", valor: "v1", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
-        { key: "2", nombre: "kp", sub: "", sup:"a", subtitle: "(KEL3)", valor: "v2", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
-        { key: "3", nombre: "kp", sub: "", sup:"b", subtitle: "(KEL4)", valor: "v3", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
-        { key: "4", nombre: "jk", sub: "", sup:"a", subtitle: "(JK1)", valor: "v4", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
-        { key: "5", nombre: "jk", sub: "", sup:"n", subtitle: "(JK2)", valor: "v5", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
+        { key: "2", nombre: "Kp", sub: "", sup:"a", subtitle: "(KEL3)", valor: "v2", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
+        { key: "3", nombre: "Kp", sub: "", sup:"b", subtitle: "(KEL4)", valor: "v3", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
+        { key: "4", nombre: "Jk", sub: "", sup:"a", subtitle: "(JK1)", valor: "v4", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
+        { key: "5", nombre: "Jk", sub: "", sup:"b", subtitle: "(JK2)", valor: "v5", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
         { key: "6", nombre: "ctl", sub: "", sup:"", subtitle: null, valor: "v6", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false }
     ],
 
