@@ -275,6 +275,14 @@ const PredefinedCard = () => {
             label: "Liss Coombs"
         },
         {
+            key: "card_08",
+            label: "Profile 1"
+        },
+        {
+            key: "card_09",
+            label: "Profile 2"
+        },
+        {
             key: "card_03",
             label: "Profile 3"
         },
