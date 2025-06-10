@@ -17,6 +17,8 @@ import CardsInfo from './SVGcomponents/CardsInfo'
 const CanvasSVG = ({ rows, rows2, frameColors, cardInfo }) => {
 
   const textData = rows.map(row => row.nombre);
+  const subData = rows.map(row => row.sub);
+  const supData = rows.map(row => row.sup);
   const valueData = rows.map(row => row.valor);
   const texts = rows2.map(row => row.text);
   const subtitles = rows.map(row => row.subtitle)
@@ -106,6 +108,8 @@ const CanvasSVG = ({ rows, rows2, frameColors, cardInfo }) => {
         <Marcos frameColors={frameColors} />
         <Textos
           textData={textData}
+          supData={supData}
+          subData={subData}
           valueData={valueData}
           texts={texts}
           fieldActivator={fieldActivator}
