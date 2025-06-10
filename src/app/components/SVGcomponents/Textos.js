@@ -6,11 +6,11 @@ const patrickHand = Patrick_Hand({
     weight: '400',
 })
 
-const Textos = ({ textData, valueData, texts, fieldActivator, subtitles, cardInfo }) => {
+const Textos = ({ textData,supData,subData, valueData, texts, fieldActivator, subtitles, cardInfo }) => {
 
     console.log(cardInfo)
     const heightWithSubtitles = subtitles.some(element => typeof element === 'string' && element !== null && element !== '') ? 185.85 : 188.85;
-    const yPositionTextDescription = (cardInfo == 'card_07' ||  cardInfo == 'cardBase' || cardInfo == null) ? "237" : "242.5"
+    const yPositionTextDescription = (cardInfo == 'card_07' || cardInfo == 'cardBase' || cardInfo == null) ? "237" : "242.5"
 
     const valuesText = {
         0: "-",
@@ -37,6 +37,12 @@ const Textos = ({ textData, valueData, texts, fieldActivator, subtitles, cardInf
                 >
                     <tspan x="0" y="0">
                         {text}
+                        {supData[index] && (
+                            <tspan dy="-6" fontSize="14" fontWeight={500}>{supData[index]}</tspan>
+                        )}
+                        {subData[index] && (
+                            <tspan dy="6" fontSize="14" fontWeight={500}>{subData[index]}</tspan>
+                        )}
                     </tspan>
                 </text>
             ))}
