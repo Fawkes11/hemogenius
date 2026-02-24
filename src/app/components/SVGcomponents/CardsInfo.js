@@ -17,12 +17,12 @@ const CardsInfo = ({ cardInfo }) => {
                 getCardInfoComponent(cardInfo)
             }
 
-            {/* <text
+            <text
                 transform='translate(435.35 265) rotate(-90)'
                 className={patrickHand.className}
                 fontFamily="Patrick Hand"
                 fontSize="11"
-            ><tspan>© Sofia Castillo</tspan></text> */}
+            ><tspan>© Sofia Castillo</tspan></text>
         </>
     )
 }
