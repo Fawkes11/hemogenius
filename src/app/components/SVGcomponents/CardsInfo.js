@@ -126,5 +126,30 @@ const getCardInfoComponent = (cardInfo) => {
                     ><tspan>Anti-IgG rabbit</tspan></text>
                 </g>
             );
+
+        case "card_10":
+            return (
+                <g id="cardInfo">
+                    <rect x="16.259" y="201.002" width="272.5" height="14" fill="#ffd271" />
+                    <text
+                        transform='translate(153 210.8)'
+                        className={patrickHand.className}
+                        fontFamily="Patrick Hand"
+                        textAnchor='middle'
+                        fontSize="10"
+                    ><tspan>Monoclonal</tspan></text>
+
+                    <rect x="356" y="201.002" width="68" height="14" fill="#ffd271" />
+
+                    <text
+                        transform='translate(390.759 210.6)'
+                        className={patrickHand.className}
+                        fontFamily="Patrick Hand"
+                        textAnchor='middle'
+                        fontSize="10"
+                    ><tspan>Anti-IgG+C3d</tspan></text>
+
+                </g>
+            );
     }
 }

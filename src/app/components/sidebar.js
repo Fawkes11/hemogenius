@@ -301,6 +301,10 @@ const PredefinedCard = () => {
         {
             key: "card_07",
             label: "NaCl"
+        },
+        {
+            key: "card_10",
+            label: "Newborn"
         }
     ]
 
