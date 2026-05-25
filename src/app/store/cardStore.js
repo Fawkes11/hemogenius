@@ -84,13 +84,21 @@ const cardsDictionary = {
         { key: "5", nombre: "Jk", sub: "", sup:"b", subtitle: "(JK2)", valor: "v5", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
         { key: "6", nombre: "ctl", sub: "", sup:"", subtitle: null, valor: "v6", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false }
     ],
-    card_10: [ /* newBorn 2 */
+    card_10: [ /* newBorn */
         { key: "1", nombre: "A", sub: "", sup:"", subtitle: "(ABO1)", valor: "v1", colorGel: "#a9dfeb", colorBox: "#1ca1e8", rbc: false, enzimas: false, plasma: false },
         { key: "2", nombre: "B", sub: "", sup:"", subtitle: "(ABO2)", valor: "v2", colorGel: "#FCFF82", colorBox: "#FDFF2C", rbc: false, enzimas: false, plasma: false },
         { key: "3", nombre: "AB", sub: "", sup:"", subtitle: "(ABO3)", valor: "v3", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
         { key: "4", nombre: "DVI+", sub: "", sup:"", subtitle: "(RH1)", valor: "v4", colorGel: "#ffffff", colorBox: "#c2c9c9", rbc: false, enzimas: false, plasma: false },
         { key: "5", nombre: "ctl", sub: "", sup:"", subtitle: null, valor: "v5", colorGel: "#ffffff", colorBox: "#ffffff", rbc: false, enzimas: false, plasma: false },
         { key: "6", nombre: "DAT", sub: "", sup:"", subtitle: null, valor: "v6", colorGel: "#d9e9cf", colorBox: "#c0dc8e", rbc: false, enzimas: false, plasma: false }
+    ],
+    card_11: [ /* Recheckeo */
+        { key: "1", nombre: "A", sub: "", sup:"", subtitle: "(ABO1)", valor: "v1", colorGel: "#a9dfeb", colorBox: "#1ca1e8", rbc: false, enzimas: false, plasma: false },
+        { key: "2", nombre: "B", sub: "", sup:"", subtitle: "(ABO2)", valor: "v2", colorGel: "#FCFF82", colorBox: "#FDFF2C", rbc: false, enzimas: false, plasma: false },
+        { key: "3", nombre: "DVI+", sub: "", sup:"", subtitle: "(RH1)", valor: "v3", colorGel: "#c2c9c9", colorBox: "#c2c9c9", rbc: false, enzimas: false, plasma: false },
+        { key: "4", nombre: "A", sub: "", sup:"", subtitle: "(ABO1)", valor: "v1", colorGel: "#a9dfeb", colorBox: "#1ca1e8", rbc: false, enzimas: false, plasma: false },
+        { key: "5", nombre: "B", sub: "", sup:"", subtitle: "(ABO2)", valor: "v2", colorGel: "#FCFF82", colorBox: "#FDFF2C", rbc: false, enzimas: false, plasma: false },
+        { key: "6", nombre: "DVI+", sub: "", sup:"", subtitle: "(RH1)", valor: "v3", colorGel: "#c2c9c9", colorBox: "#c2c9c9", rbc: false, enzimas: false, plasma: false }
     ],
 
 }
