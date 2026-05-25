@@ -38,7 +38,7 @@ const Sidebar = () => {
     };
 
     const getInputComponent = (item, columnKey) => {
-
+        console.log("render")
         switch (columnKey) {
             case "colorGel":
                 return (
@@ -160,14 +160,14 @@ const Sidebar = () => {
             case "texts":
 
                 return (
-                        <Input
-                            type="text"
-                            tabIndex={1}
-                            placeholder={`Text ${item.key}`}
-                            maxLength={18}
-                            value={item.text}
-                            onChange={(e) => handleInputChange(item.key, "text", e.target.value)}
-                        />
+                    <Input
+                        type="text"
+                        tabIndex={item.key}
+                        placeholder={`Text ${item.key}`}
+                        maxLength={18}
+                        value={item.text}
+                        onChange={(e) => handleInputChange(item.key, "text", e.target.value)}
+                    />
                 );
 
             case "fieldactivator":
@@ -196,12 +196,12 @@ const Sidebar = () => {
 
             <div className="flex w-auto flex-col items-center">
                 <Tabs
-                aria-label="Options"
-                classNames={{
-                    panel: [
-                        "px-0"
-                    ]
-                }}
+                    aria-label="Options"
+                    classNames={{
+                        panel: [
+                            "px-0"
+                        ]
+                    }}
                 >
                     <Tab key="photos" title="Predefined Cards" >
                         <Card
@@ -305,6 +305,10 @@ const PredefinedCard = () => {
         {
             key: "card_10",
             label: "Newborn"
+        },
+        {
+            key: "card_11",
+            label: "Re-Check"
         }
     ]
 
@@ -328,7 +332,7 @@ const TextTable = ({ columns2, rows2, getInputComponent }) => {
 
     return (
         <Table
-            aria-label=""
+            aria-label="Text editing table"
             classNames={{
                 base: [
                     "max-w-md"

@@ -151,5 +151,39 @@ const getCardInfoComponent = (cardInfo) => {
 
                 </g>
             );
+        case "card_11":
+            return (
+                <g id="cardInfo">
+                    <rect x="16.259" y="201.002" width="204" height="14" fill="#ffd271" />
+                    <text
+                        transform='translate(118 210.8)'
+                        className={patrickHand.className}
+                        fontFamily="Patrick Hand"
+                        textAnchor='middle'
+                        fontSize="10"
+                    ><tspan>Monoclonal</tspan></text>
+
+                    <rect x="220.4" y="201.002" width="204" height="14" fill="#ffd271" />
+                    <line
+                        x1="220.4"
+                        y2="201.002"
+                        x2="220.4"
+                        y1="265"
+                        stroke="black"
+                        stroke-width="1"
+                        stroke-dasharray="2"
+                    />
+                    <text
+                        transform='translate(321 210.8)'
+                        className={patrickHand.className}
+                        fontFamily="Patrick Hand"
+                        textAnchor='middle'
+                        fontSize="10"
+                    ><tspan>Monoclonal</tspan></text>
+
+
+
+                </g>
+            );
     }
 }
