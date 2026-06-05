@@ -16,7 +16,7 @@ const Pozo_1 = ({ rowData }) => {
             {GradoComponent}
 
             { rbc && <rect x="27.619" y="34.752" width="45.48" height="10" fill="#ffb6c0" opacity={0.95} />}
-            { enzimas && <rect x="27.619" y="24.752" width="45.48" height="10" fill="#f5f5f5" opacity={0.95} />}
+            { enzimas && <rect x="27.619" y="24.752" width="45.48" height="10" fill="#0085bf" opacity={0.95} />}
             { plasma && <rect x="27.619" y="14.752" width="45.48" height="10" fill="#f1ee9e" opacity={0.95} />}
 
 

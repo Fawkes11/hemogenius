@@ -9,7 +9,7 @@ const Pozo_6 = ({ rowData }) => {
         <g id="pozo_x5F_6_x5F_ag">
             { GradoComponent }
             { rbc &&  <rect x="367.619" y="14.752" width="45.48" height="10" fill="#ffb6c0" /> }
-            { enzimas &&  <rect x="367.619" y="24.752" width="45.48" height="10" fill="#f5f5f5" /> }
+            { enzimas &&  <rect x="367.619" y="24.752" width="45.48" height="10" fill="#0085bf" /> }
             { plasma &&  <rect x="367.619" y="34.752" width="45.48" height="10" fill="#f1ee9e" /> }
         </g>
     )
